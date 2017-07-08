@@ -1,1 +1,1 @@
-web: sh coding-exercise-web/target/bin/webapp.sh
+web: sh coding-exercise-web/target/bin/webapp
