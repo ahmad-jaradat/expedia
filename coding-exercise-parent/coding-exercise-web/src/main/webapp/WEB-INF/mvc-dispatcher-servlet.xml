@@ -1,0 +1,35 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/mvc
+	http://www.springframework.org/schema/mvc/spring-mvc.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd"
+	default-autowire="byType" default-lazy-init="false">
+
+	<context:annotation-config />
+	<mvc:annotation-driven></mvc:annotation-driven>
+
+	<mvc:resources mapping="/resources/**" location="/resources/"
+		cache-period="300" />
+
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix">
+			<value>/WEB-INF/view/</value>
+		</property>
+		<property name="suffix">
+			<value>.jsp</value>
+		</property>
+	</bean>
+
+	<bean id="webServiceClient" class="com.expedia.integration.webservice.WebServiceClient" />
+	<bean id="mainPageController" class="com.expedia.MainPageController" />
+	<bean id="numberOfHotelStarValidator"
+		class="com.expedia.offer.search.validator.NumberOfHotelStarValidator" />
+	<bean id="checkInBeforeCheckOutValidator"
+		class="com.expedia.offer.search.validator.CheckInBeforeCheckOutValidator" />
+
+</beans>
