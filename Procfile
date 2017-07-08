@@ -1,1 +1,1 @@
-web: coding-exercise-web\target\bin\webapp.bat
+web: sh coding-exercise-web/target/bin/webapp.sh
