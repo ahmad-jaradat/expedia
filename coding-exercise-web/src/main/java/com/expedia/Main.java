@@ -13,7 +13,7 @@ import org.apache.catalina.webresources.DirResourceSet;
 import org.apache.catalina.webresources.StandardRoot;
 
 public class Main {
-	private static final String WEB_DIR_LOCACTION = "src/main/webapp";
+	private static final String WEB_DIR_LOCACTION = "coding-exercise-web/src/main/webapp";
 	private static final String PORT_ENV_KEY = "PORT";
 	private static final String DEFAULT_PORT = "8080";
 
