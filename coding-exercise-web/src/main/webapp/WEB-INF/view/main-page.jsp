@@ -34,6 +34,13 @@
 	<script src="resources/datepicker/js/bootstrap-datepicker.js"></script>
 	<script src="resources/js/date-picker-init.js"></script>
 	<script src="resources/js/star-rating-init.js"></script>
+	<c:if test="${not empty  error}">
+		<div class="alert alert-warning">
+			<a href="#" class="close" data-dismiss="alert">&times;</a> <strong>Error</strong>
+			<%=request.getAttribute("error")%>
+		</div>
+
+	</c:if>
 	<div class="container">
 		<div class="row">
 			<h1>Expedia</h1>
@@ -69,7 +76,7 @@
 		</div>
 
 		<hr />
-		
+
 		<div class="row">
 			<c:forEach items="${offers}" var="offer">
 				<a href="<c:out value="${offer.hotelUrl}"></c:out>">
@@ -118,11 +125,6 @@
 		</div>
 
 		<hr />
-
-		<ul class="pager">
-			<li><a href="#">Previous</a></li>
-			<li><a href="#">Next</a></li>
-		</ul>
 	</div>
 
 </body>

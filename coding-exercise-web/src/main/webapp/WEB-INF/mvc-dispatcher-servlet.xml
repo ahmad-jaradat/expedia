@@ -32,4 +32,5 @@
 	<bean id="checkInBeforeCheckOutValidator"
 		class="com.expedia.offer.search.validator.CheckInBeforeCheckOutValidator" />
 
+	<bean id="appLocatorConfigurer" class="com.expedia.AppLocatorConfigurer" />
 </beans>

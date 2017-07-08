@@ -8,9 +8,8 @@ import com.expedia.service.AppServiceLocator;
 
 public class OfferFilter {
 
-	private static final OfferProviderGateway offerProviderGateway = AppServiceLocator
-			.getSingleService(OfferProviderGateway.class);
-	private static final Iterator<OfferFilterValidator> offerFilterValidators = AppServiceLocator
+	private OfferProviderGateway offerProviderGateway = AppServiceLocator.getSingleService(OfferProviderGateway.class);
+	private Iterator<OfferFilterValidator> offerFilterValidators = AppServiceLocator
 			.getServices(OfferFilterValidator.class);
 	private final OfferFilterDto dto;
 
