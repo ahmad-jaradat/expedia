@@ -43,7 +43,7 @@ In these module I try to avoid overarchitect but keep SOLID principle in mind, t
 These module is too simple, it represent on of system boundary, web module inject it to expedia offer module throght service locator.
 In theses module filter conver to url parameter and convert returned json as offer info. these is the only affected module in the system in case of changes for web service.
 
-## Programming language :
+## Programming language
 I pickup java for next reasons:
 *  Java statically-typed language, so using java will limit number of strange, unexpected error and help to build strong IDE with advance refactoring utility.
 *  Open source with large number of community, which mean large number of useful tools, framework and api.
@@ -51,3 +51,6 @@ I pickup java for next reasons:
 *  Also I have good experience in java.
 *  I have 2 year's and 5 month of experince in java.
 		
+## What I Learn
+I these exercise I learn how to use travis-ci and heroku it's my first time both tools Also I learn how to use async spring mvc controller also it's my first time with it.
+I learned how to present list of object using bootstrap thumbnail, and how to use date picker (Third party javascript library).
